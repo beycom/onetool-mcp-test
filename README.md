@@ -4,20 +4,22 @@ Test data assets for [onetool-mcp](https://github.com/beycom/onetool-mcp).
 
 ## Setup
 
-Download all assets into `tests/data/`:
+From the onetool-mcp project root:
 
 ```bash
 just test::setup
 ```
 
-Or manually:
+Which runs:
 
 ```bash
-mkdir -p tests/data
-gh release download v1 --repo beycom/onetool-mcp-test --dir tests/data/ --clobber
+curl -sL https://github.com/beycom/onetool-mcp-test/archive/refs/heads/main.zip -o /tmp/ot-test-data.zip
+unzip -jo /tmp/ot-test-data.zip -d tests/data/
 ```
 
-## Assets (v1)
+No GitHub account or `gh` CLI required — just `curl` and `unzip`.
+
+## Files
 
 | File | Description |
 |------|-------------|
