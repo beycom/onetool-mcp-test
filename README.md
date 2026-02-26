@@ -7,7 +7,7 @@ Test data assets for [onetool-mcp](https://github.com/beycom/onetool-mcp).
 From the onetool-mcp project root:
 
 ```bash
-just test::setup
+just test-setup
 ```
 
 Which runs:
